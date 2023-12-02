@@ -75,7 +75,7 @@ fn main() {
     let mut sum = 0;
 
     let mut lineno = 1;
-    for line in read_to_string("input").unwrap().lines() {
+    for line in read_to_string("day2/input").unwrap().lines() {
         let groups = parse_input(line.to_string().as_str());
         if is_game_possible(groups) {
                 sum += lineno;
@@ -86,7 +86,7 @@ fn main() {
     println!("Sum: {}", sum);
 
     let mut power: u32 = 0;
-    for line in read_to_string("input").unwrap().lines() {
+    for line in read_to_string("day2/input").unwrap().lines() {
         let groups = parse_input(line.to_string().as_str());
         let set_power = min_set_cube(groups);
         power += set_power;

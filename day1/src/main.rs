@@ -56,17 +56,17 @@ pub fn parse_input_v2(input: &str) -> u32 {
 
 fn main() {
     let mut sum: u64 = 0;
-    for line in read_to_string("/home/abhi/RustroverProjects/adventofcode/day1/src/input").unwrap().lines() {
+    for line in read_to_string("day1/input").unwrap().lines() {
         let calibration = parse_input(line.to_string().as_str());
-        println!("Cal: {}", calibration);
+        //println!("Cal: {}", calibration);
         sum += calibration as u64;
     }
 
     println!("Sum: {}", sum);
 
     sum = 0;
-    for line in read_to_string("/home/abhi/RustroverProjects/adventofcode/day1/src/input").unwrap().lines() {
-        println!("line: {}", line);
+    for line in read_to_string("day1/input").unwrap().lines() {
+        //println!("line: {}", line);
         let calibration = parse_input_v2(line.to_string().as_str());
         sum += calibration as u64;
     }
